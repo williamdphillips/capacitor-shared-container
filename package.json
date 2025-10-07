@@ -7,7 +7,8 @@
   "files": [
     "dist/",
     "ios/",
-    "android/"
+    "android/",
+    "SoundsCapacitorSharedContainer.podspec"
   ],
   "scripts": {
     "build": "tsc",
