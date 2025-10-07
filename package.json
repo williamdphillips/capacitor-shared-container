@@ -1,0 +1,57 @@
+{
+  "name": "@sounds/capacitor-shared-container",
+  "version": "1.0.0",
+  "description": "Capacitor plugin for accessing iOS shared container",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "ios/",
+    "android/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint . --ext ts",
+    "lint:prettier": "prettier --check \"**/*.{ts,js,json,md}\"",
+    "lint:fix": "npm run lint:eslint -- --fix && npm run lint:prettier -- --write",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
+    "@capacitor/android": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.10.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT",
+  "author": "Sounds Studios",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williamdphillips/capacitor-shared-container"
+  },
+  "bugs": {
+    "url": "https://github.com/williamdphillips/capacitor-shared-container/issues"
+  },
+  "homepage": "https://github.com/williamdphillips/capacitor-shared-container#readme",
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "shared-container",
+    "ios"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  }
+}
