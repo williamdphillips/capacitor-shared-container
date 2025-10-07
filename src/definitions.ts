@@ -29,11 +29,14 @@ export interface SharedContainerPlugin {
   /**
    * Clean up old files from the shared container (removes files older than 24 hours or larger than 500MB)
    */
-  cleanupOldSharedContainerFiles(options: { path: string }): Promise<{ deletedCount: number; deletedSize: number; message: string }>;
+  cleanupOldSharedContainerFiles(options: {
+    path: string;
+  }): Promise<{ deletedCount: number; deletedSize: number; message: string }>;
 
   /**
    * Completely wipe all files from a directory in the shared container
    */
-  wipeSharedContainerDirectory(options: { path: string }): Promise<{ deletedCount: number; deletedSize: number; message: string }>;
+  wipeSharedContainerDirectory(options: {
+    path: string;
+  }): Promise<{ deletedCount: number; deletedSize: number; message: string }>;
 }
-

@@ -8,4 +8,3 @@ const SharedContainer = registerPlugin<SharedContainerPlugin>('SharedContainer',
 
 export * from './definitions';
 export default SharedContainer;
-

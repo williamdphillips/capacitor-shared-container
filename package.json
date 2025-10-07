@@ -21,9 +21,11 @@
     "@capacitor/core": "^7.0.0"
   },
   "devDependencies": {
+    "@capacitor/android": "^7.0.0",
     "@capacitor/cli": "^7.0.0",
     "@capacitor/ios": "^7.0.0",
-    "@capacitor/android": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.0",
+    "@typescript-eslint/parser": "^8.46.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^8.10.0",
     "prettier": "^3.1.1",
