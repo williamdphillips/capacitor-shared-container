@@ -1,7 +1,7 @@
 {
   "name": "@sounds/capacitor-shared-container",
   "version": "1.0.0",
-  "description": "Capacitor plugin for accessing iOS shared container",
+  "description": "Capacitor plugin for accessing iOS App Group / Android shared_container storage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -48,7 +48,8 @@
     "plugin",
     "native",
     "shared-container",
-    "ios"
+    "ios",
+    "android"
   ],
   "capacitor": {
     "ios": {
